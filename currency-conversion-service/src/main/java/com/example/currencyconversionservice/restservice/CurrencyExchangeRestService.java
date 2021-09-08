@@ -14,7 +14,8 @@ import com.example.currencyconversionservice.model.CurrencyConversion;
  *
  */
 
-@FeignClient(name = "currency-exchange", url = "localhost:8000")
+//@FeignClient(name = "currency-exchange", url = "localhost:8000")
+@FeignClient(name = "currency-exchange-service")
 public interface CurrencyExchangeRestService {
 
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
