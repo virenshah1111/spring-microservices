@@ -16,8 +16,10 @@ This Project covers how to use microservices with Spring cloud
 
 ## List of URLs
 - config server : `localhost:8888/<application-name>/<profile>`
+- config client (limits-service) : `http://localhost:8080/limits`
 - currency-exchange: `http://localhost:8000/currency-exchange/from/USD/to/INR`
-- currency-conversion: `http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/1000`
+- currency-conversion without feign: `http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/1000`
+- currency-conversion with feign: `http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/1000`
 - Eureka server: `http://localhost:8761/`
 
 **API gateway before filter**
